@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* Reset paramamétres CSS */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+/* Variables couleurs principales du projet */
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* Intégration Font */
+@font-face {
+  font-family: "font-1";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+}
+.nav-container {
+  font-family: "font-1", sans-serif;
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+}
+.nav-container img {
+  margin-left: 100px;
+}
+.nav-container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 24px;
+  margin-right: 100px;
+}
+.nav-container .nav-active {
+  position: relative;
+}
+.nav-container .nav-active::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: rgb(255, 96, 96);
+  position: absolute;
+  border-radius: 10px;
+}
+.nav-container a {
+  text-decoration: none;
+  color: rgb(255, 96, 96);
+}
+.nav-container a:nth-of-type(1) {
+  margin-right: 65px;
+}
+
+.footers-container {
+  background: rgb(0, 0, 0);
+}
+.footers-container .logo-container {
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 45px;
+}
+.footers-container h2 {
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.error-page {
+  font-family: "font-1", sans-serif;
+}
+.error-page h1 {
+  color: rgb(255, 96, 96);
+  text-align: center;
+  font-size: 288px;
+  font-weight: 700;
+  margin-top: 110px;
+}
+.error-page p {
+  text-align: center;
+  color: rgb(255, 96, 96);
+  font-size: 36px;
+  margin-top: 110px;
+  margin-bottom: 150px;
+}
+
+.return {
+  width: 100%;
+  color: rgb(255, 96, 96);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 140px;
+}/*# sourceMappingURL=index.css.map */
