@@ -9,9 +9,15 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/housingsheet" element={<HousingSheet />} />
+        <Route path="/" element={<Home />} index />
+        <Route path="about" element={<About />} index />
+
+
+        <Route path="housingsheet">
+          <Route element={<HousingSheet />} index />
+          <Route path=':id' element={<HousingSheet />} />
+        </Route>
+
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
@@ -19,3 +25,5 @@ const App = () => {
 };
 
 export default App;
+
+

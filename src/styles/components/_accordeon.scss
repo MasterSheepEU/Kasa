@@ -1,0 +1,60 @@
+.accordeons {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .accordeon {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0;
+
+  }
+  
+  .accordeon-title {
+    font-family: $font-1;
+    user-select: none;
+    background: $color-1;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .accordeon-title:hover,
+  .active .accordeon-title {
+    cursor: pointer;
+  }
+  
+  .accordeon-icon:before {
+    font: var(--fa-font-solid);
+    content: "\f077";
+    transition: all 0.3s linear;
+  }
+  
+
+  .accordeon-content {
+    font-family: $font-1;
+    border-radius: 0 0 5px 5px;
+    background: rgba(246, 246, 246, 1);
+    color: $color-1;
+    user-select: none;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .active .accordeon-content {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    padding: 1rem;
+    opacity: 1;
+  }
+  

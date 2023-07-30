@@ -19,8 +19,4 @@ const Error404 = () => {
 };
 
 
-
-<li>Accueil</li>
-
-
 export default Error404;

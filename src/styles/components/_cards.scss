@@ -1,0 +1,52 @@
+@import "../settings";
+
+
+.locations {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: $color-4;
+}
+
+
+
+.locate{
+    width: 30%;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: rgba(246, 246, 246, 1);
+    
+    div{
+        position: relative;
+        width: 340px;
+        height: 340px;
+        margin-top: 50px;
+     
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+       
+    }
+
+    h2 {
+        width: 75%;
+        position: absolute;
+        font-family: $font-1;
+        font-size: 18px;
+        color: rgb(7, 7, 7);
+        z-index: 2;
+        top: 85%;
+        left: 5%;
+
+    }
+}

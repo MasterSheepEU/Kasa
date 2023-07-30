@@ -1,0 +1,32 @@
+.home-banner{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    img{
+        position: absolute;
+        z-index: -2;
+        height: 100%;
+        width: 86%;
+        object-fit: cover;
+        border-radius: 25px;
+
+    }
+
+    h2 {
+        width:85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-1;
+        color: rgb(255, 255, 255);
+        font-size: 48px;
+        height: 223px;
+        
+    }
+
+}
+

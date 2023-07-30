@@ -2,6 +2,7 @@
 /* Reset paramamétres CSS */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 /* Variables couleurs principales du projet */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 body {
   max-width: 1440px;
   margin: auto;
@@ -49,8 +50,89 @@ body {
   margin-right: 65px;
 }
 
+.home-banner {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home-banner img {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 86%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.home-banner h2 {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "font-1", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  height: 223px;
+}
+
+.about-banner {
+  width: 100%;
+  height: 223px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about-banner img {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 86%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.lease-cards {
+  width: 86%;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgb(246, 246, 246);
+}
+.lease-cards div {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  margin-top: 50px;
+}
+.lease-cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.lease-cards h2 {
+  width: 75%;
+  position: absolute;
+  font-family: "font-1", sans-serif;
+  font-size: 18px;
+  color: rgb(7, 7, 7);
+  z-index: 2;
+  top: 85%;
+  left: 5%;
+}
+
 .footers-container {
   background: rgb(0, 0, 0);
+  font-family: "font-1", sans-serif;
+  font-size: 24px;
 }
 .footers-container .logo-container {
   text-align: center;
@@ -61,6 +143,113 @@ body {
   text-align: center;
   color: white;
   padding-bottom: 30px;
+}
+
+.accordeons {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.accordeon {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.accordeon-title {
+  font-family: "font-1", sans-serif;
+  user-select: none;
+  background: rgb(255, 96, 96);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.accordeon-title:hover,
+.active .accordeon-title {
+  cursor: pointer;
+}
+
+.accordeon-icon:before {
+  font: var(--fa-font-solid);
+  content: "\f077";
+  transition: all 0.3s linear;
+}
+
+.accordeon-content {
+  font-family: "font-1", sans-serif;
+  border-radius: 0 0 5px 5px;
+  background: rgb(246, 246, 246);
+  color: rgb(255, 96, 96);
+  user-select: none;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.active .accordeon-content {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  padding: 1rem;
+  opacity: 1;
+}
+
+/* Reset paramamétres CSS */
+/* Variables couleurs principales du projet */
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.locations {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(246, 246, 246);
+}
+
+.locate {
+  width: 30%;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgb(246, 246, 246);
+}
+.locate div {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  margin-top: 50px;
+}
+.locate img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.locate h2 {
+  width: 75%;
+  position: absolute;
+  font-family: "font-1", sans-serif;
+  font-size: 18px;
+  color: rgb(7, 7, 7);
+  z-index: 2;
+  top: 85%;
+  left: 5%;
 }
 
 .error-page {
