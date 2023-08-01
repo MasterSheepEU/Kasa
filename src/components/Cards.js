@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import Logement from '../logements.json';
+import "../styles/components/_cards.scss"
 
 const Cards = () => {
     return (

@@ -8,7 +8,7 @@ import Accordeon from "../components/Accordeon"
 import Slideshow from "../components/Slideshow ";
 import RatingStars from "../components/RatingStar";
 import Logement from '../logements.json';
-import "../styles/pages/_mainLogement.scss";
+import "../styles/pages/_housingSheet.scss";
 
 const HousingSheet = () => {
 
@@ -33,21 +33,19 @@ const HousingSheet = () => {
 
 
         <>
-
-
             <Navigation />
 
-            <div className='mainlogement'>
+            <div className='housing-container'>
 
-                <div className='miseenavant'>
+                <div className='preview-picture'>
                     {destination.length > 0 &&
                         <Slideshow nbPictures={nbPictures} destination={destination.length > 0 && destination[0]} />
                     }
                 </div>
 
-                <section className="section1">
+                <section className="host-information">
 
-                    <article className="article1">
+                    <article className="housing-description">
 
                         <h2 className="droite">{destination.length > 0 && destination[0].title}</h2>
 
@@ -65,7 +63,7 @@ const HousingSheet = () => {
 
                     </article>
 
-                    <article className="article2">
+                    <article className="host-name">
                         <span>
                             <div className="name">
                                 <p>{destination.length > 0 && destination[0].host.name}</p>
@@ -79,7 +77,7 @@ const HousingSheet = () => {
 
                 </section>
 
-                <section className="section2">
+                <section className="host-equipements">
                     <article>
                         <Accordeon title="Description" content={destination.length > 0 && destination[0].description} i={destination.length > 0 && destination[0].description} />
                     </article>

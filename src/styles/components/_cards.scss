@@ -1,4 +1,5 @@
 @import "../settings";
+@import "../../assets/fonts/fonts";
 
 
 .locations {
@@ -6,47 +7,61 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    background: $color-4;
-}
-
-
-
-.locate{
-    width: 30%;
+    padding: 50px 50px;
+    margin-top: 43px;
     border-radius: 25px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background: rgba(246, 246, 246, 1);
-    
-    div{
+    background: $color-4;
+
+    .locate{
         position: relative;
-        width: 340px;
-        height: 340px;
-        margin-top: 50px;
-     
+        width: 30%;
+        margin: auto;
+        height: 320px;
+        margin-bottom: 50px;
+        
+    
+    }
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+       
     }
 
-    img {
+    img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
-       
     }
 
-    h2 {
-        width: 75%;
+    p{
         position: absolute;
-        font-family: $font-1;
-        font-size: 18px;
-        color: rgb(7, 7, 7);
-        z-index: 2;
+        width: 100%;
         top: 85%;
-        left: 5%;
-
+        left: 3%;
+        color: $color-4;
+        font-size: 18px;
     }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    .locations {
+        display: block;
+        padding: 0px 20px;
+        background: none;
+
+
+
+        .locate {
+            width: 100%;
+            height: 255px;
+
+
+            }
+    }
+    
 }

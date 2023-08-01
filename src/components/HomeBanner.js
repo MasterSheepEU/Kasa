@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/components/_homeBanner.scss"
 
 const HomeBanner = (bannerimg) => {
     return (

@@ -1,3 +1,7 @@
+@import "../settings";
+@import "../../assets/fonts/fonts";
+
+
 .home-banner{
     width: 100%;
     margin-top: 50px;
@@ -27,6 +31,29 @@
         height: 223px;
         
     }
+
+}
+
+
+
+@media (max-width: 720px) {
+
+    .home-banner{
+        width: 92%;
+        height: 111px;
+        margin: auto;
+        margin-top: 27px;
+
+        h2{
+            width: 75%;
+           font-size: 24px; 
+           justify-content: flex-start;
+        }
+
+
+    }
+
+
 
 }
 

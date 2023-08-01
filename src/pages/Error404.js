@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import Navigation from '../components/Navigation';
 import Footers from '../components/Footers';
+import "../styles/pages/_error404.scss";
 
 const Error404 = () => {
     return (

@@ -1,3 +1,7 @@
+@import "../settings";
+@import "../../assets/fonts/fonts";
+
+
 .nav-container{
     font-family: $font-1;
     width: 100%;
@@ -41,4 +45,26 @@
         margin-right: 65px;
     }
 
+}
+
+@media (max-width: 720px) {
+    .nav-container{
+
+        img{
+            width: 145px;
+            margin-left: 10%;
+            height: 46px;
+        }
+
+        ul{
+            margin-right: 10%;
+            font-size: 12px;
+        }
+
+        a:nth-of-type(1){
+            margin-right: 26px;
+        }
+
+
+    }
 }

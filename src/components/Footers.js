@@ -1,5 +1,6 @@
 import React from 'react';
 import WhiteLogo from './WhiteLogo'
+import "../styles/components/_footers.scss"
 
 const Footers = () => {
     return (

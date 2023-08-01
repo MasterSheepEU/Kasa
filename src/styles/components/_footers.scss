@@ -1,7 +1,12 @@
+@import "../settings";
+@import "../../assets/fonts/fonts";
+
+
 .footers-container{
     background: $color-2;
     font-family: $font-1;
     font-size: 24px;
+    margin-top: 50px;
 
     .logo-container{
         text-align: center;
@@ -15,5 +20,27 @@
         color: white;
         padding-bottom: 30px;
     }
+
+}
+
+
+@media (max-width: 375px) {
+
+    .footers-container {
+        font-size: 12px;
+        margin-top: 27px;
+
+        .logo-container {
+            margin-bottom: 0;
+        }
+
+        h2{
+            width:110px;
+            margin: auto;
+
+        }
+    }
+
+
 
 }
