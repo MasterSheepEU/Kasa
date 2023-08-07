@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import LogoKasa from "../assets/img/logo_kasa.png"
 
 
 
@@ -7,7 +8,7 @@ const Logo = () => {
     return (
         <NavLink to="/">
 
-            <img src="./logo_kasa.png" alt="Logo de Kasa" />
+            <img src={LogoKasa} alt="Logo de Kasa" />
 
         </NavLink>
     );

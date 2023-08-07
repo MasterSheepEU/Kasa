@@ -17,6 +17,7 @@
   
   .accordeon-title {
     font-family: $font-1;
+    font-size: 24px;
     user-select: none;
     background: $color-1;
     color: rgba(255, 255, 255, 1);
@@ -36,9 +37,14 @@
   .accordeon-icon:before {
     font: var(--fa-font-solid);
     content: "\f077";
-    transition: all 0.3s linear;
+    transition: transform 0.2s linear;
   }
   
+  .active .accordeon-icon:before  {
+  transform: rotate(-180deg);
+  }
+
+
 
   .accordeon-content {
     font-family: $font-1;
@@ -66,5 +72,16 @@
   @media (max-width: 720px) {
     .accordeon {
       width: 90%;
+
+
+      .accordeon-title {
+        font-size: 13px;
+      }
+
+      .accordeon-content{
+        font-size: 13px;
+      }
+
+
     }
   }

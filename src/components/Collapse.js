@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import "../styles/components/_accordeon.scss"
+import "../styles/components/_collapse.scss"
 
 
 const Accordeon = ({ title, content }) => {

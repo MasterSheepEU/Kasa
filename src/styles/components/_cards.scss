@@ -18,8 +18,9 @@
         margin: auto;
         height: 320px;
         margin-bottom: 50px;
+       
         
-    
+
     }
     a{
         display: block;
@@ -33,9 +34,12 @@
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
+        filter: brightness(0.7);
+      
     }
 
     p{
+        font-family: $font-1;
         position: absolute;
         width: 100%;
         top: 85%;
@@ -62,6 +66,12 @@
 
 
             }
+
+        p{
+            top: 80%;
+            left: 2%;
+        }
+
     }
     
 }

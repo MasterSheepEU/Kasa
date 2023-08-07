@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from "react";
 import Navigation from '../components/Navigation';
 import Footers from '../components/Footers';
-import Accordeon from "../components/Accordeon"
-import Slideshow from "../components/Slideshow ";
+import Collapse from "../components/Collapse"
+import Slideshow from "../components/Slideshow";
 import RatingStars from "../components/RatingStar";
 import Logement from '../logements.json';
 import "../styles/pages/_housingSheet.scss";
@@ -79,10 +79,10 @@ const HousingSheet = () => {
 
                 <section className="host-equipements">
                     <article>
-                        <Accordeon title="Description" content={destination.length > 0 && destination[0].description} i={destination.length > 0 && destination[0].description} />
+                        <Collapse title="Description" content={destination.length > 0 && destination[0].description} i={destination.length > 0 && destination[0].description} />
                     </article>
                     <article>
-                        <Accordeon title="Équipements" content={equipement && equipement.map((detail, index) => {
+                        <Collapse title="Équipements" content={equipement && equipement.map((detail, index) => {
                             return (
                                 <p key={index + 'Z'}>{detail}</p>
                             )
